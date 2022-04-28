@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/encriptador.css">
+    <title>Encriptador</title>
+</head>
+<script src="/encriptador.js"></script>
+<body>
+    <header class="section-logo">
+        <img src="/assets/logo-alura.svg" alt="logo-alura" srcset="" width="48" height="48">
+        <img src="/assets/mi-name.svg" class="mi-name" alt="" width="229" height="18">
+    </header>
+    
+    <main>
+    <section class="section-texto">
+            <textarea class="responsive-texto" name="textarea-frase" id="textarea-frase" cols="120" rows="10" placeholder="Ingrese el texto aqui" spellcheck="false" ></textarea>
+                               
+        <div id="div-button" class="div-button">
+            <button type="button" id="boton-encriptar" onclick="EncriptarCadena();">Encriptar</button>   
+            <button type="button" class="cambiar-azul" id="boton-desencriptar" onclick="desEncriptar();">Desencriptar</button>                   
+        </div>
+        
+    </section>
+
+       
+    <section id="section-image-none">
+       
+        <div id="div-image-none">
+            <textarea name="text-image-none" id="textarea-img-none" cols="130" rows="5" spellcheck="false"  ></textarea>
+        </div>
+
+        <div class="div-muñeco">
+            <img id="muñeco" class="muñeco" src="/assets/muñeco.svg" alt="" width="350" height="220">
+        </div>
+        
+        <section id="section-image-butoncopiar">
+        <div id="text-abajo-one" class="text-abajo-one">
+            <p>Ningún mensaje fue encontrado</p>           
+        </div>
+        <div id="text-abajo-two" class="text-abajo-two"> <p>Ingresa el texto que desees encriptar o desencriptar.</p></div>
+        <div id="div-boton-copiar">
+            <button class="boto-copiar" class="cambiar-azul"type="button" id="boton-copiar" onclick="botonCopiar()"  >Copiar</button>
+     </div>
+           </section>
+    </section>
+</main>
+
+</body>
+</html>
